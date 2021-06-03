@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block window %}  
+<div class="container">
+    {% for massege in massages %}
+   <div class="card">
+  
+  <div class="container">
+    <h4><b>{{massege.name}}</b></h4>
+    <p>{{massege.email}}</p>
+    <p>{{massege.text}}</p>
+    <p>{{massege.date}}</p>
+  </div>
+</div>
+   <hr>
+    {% endfor %}
+
+    </div>
+
+{% endblock window %}
+  
